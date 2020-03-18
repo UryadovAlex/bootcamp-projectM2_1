@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="up">
+            <div class="text">
+                <label for="amount">Начальная сумма вклада (Р)</label>
+                <label for="monthly">Сумма ежемесячного пополнения (Р)</label>
+                <label for="percent">Процентная ставка (%)</label>
+                <label for="days">Срок вклада (дней)</label>
+            </div>
+
+            <div class="input">
+                <input type="text" id="amount" placeholder="Amount">
+                <p>Field can't be empty</p>
+                <input type="text" id="monthly" placeholder="Monthly fill">
+                <p>Field can't be empty</p>
+                <input type="text" id="percent" placeholder="%">
+                <p>Field can't be empty</p>
+                <input type="text" id="days" placeholder="Days">
+                <p>Field can't be empty</p>
+            </div>
+        </div>
+        <button href="#" class="btn" id="btn">Рассчитать</button>
+    </main>
+    <div class="hidden">
+        <p id="error">Проверьте введенные данные</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
